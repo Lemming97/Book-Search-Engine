@@ -20,6 +20,15 @@
     "url": "https://github.com/Lemming97/Book-Search-Engine/issues"
   },
   "homepage": "https://github.com/Lemming97/Book-Search-Engine#readme",
+  "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
+    "apollo-server-express": "^2.25.0",
+    "bcrypt": "^4.0.1",
+    "express": "^4.17.1",
+    "graphql": "^15.7.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.10"
+  },
   
   "devDependencies": {
     "concurrently": "^5.1.0"
