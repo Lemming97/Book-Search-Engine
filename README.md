@@ -75,6 +75,7 @@ THEN I am logged out of the site and presented with a menu with the options Sear
 
 ## Screenshots 
 
+<img width="1347" alt="Screen Shot 2022-08-14 at 11 37 41 AM" src="https://user-images.githubusercontent.com/49573760/184550626-69294c36-6253-476e-8619-bd4cb1a5a106.png">
 
 
 
