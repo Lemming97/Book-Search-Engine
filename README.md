@@ -80,7 +80,7 @@ THEN I am logged out of the site and presented with a menu with the options Sear
 
 
 ## Link 
-
+<a href="https://enigmatic-ridge-01417.herokuapp.com/">Click Here</a>
 
 ## Usage 
 
