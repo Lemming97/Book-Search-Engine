@@ -13,7 +13,8 @@ const LoginForm = () => {
   const [showAlert, setShowAlert] = useState(false);
 
   // initialize mutation
-  const [loginUser, { error }] = useMutation(LOGIN_USER);
+  // const [loginUser, { error }] = useMutation(LOGIN_USER);
+  const [loginUser] = useMutation(LOGIN_USER);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -24,11 +25,11 @@ const LoginForm = () => {
     event.preventDefault();
 
     // check if form has everything (as per react-bootstrap docs)
-    // const form = event.currentTarget;
-    // if (form.checkValidity() === false) {
-    //   event.preventDefault();
-    //   event.stopPropagation();
-    // }
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
 
     try {
       const { data } = await loginUser({
@@ -102,7 +103,6 @@ const LoginForm = () => {
         >
           Submit
         </Button>
-        {error && <div>Login failed</div>}
       </Form>
     </>
   );
