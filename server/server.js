@@ -32,7 +32,7 @@ if (process.env.NODE_ENV === "production") {
 }
 // app.use(routes);
 
-//have to comment this code out to get the playground to load
+// have to comment this code out to get the playground to load
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
