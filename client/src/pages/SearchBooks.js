@@ -75,8 +75,10 @@ const SearchBooks = () => {
     }
 
     try {
+      //fixed the selected book data being stored in the object
+      console.log(BookInput);
       const { data } = await saveBook({
-        variables: { bookData: { ...BookInput } },
+        variables: { book: { ...BookInput } },
       });
 
       // if (!response.ok) {

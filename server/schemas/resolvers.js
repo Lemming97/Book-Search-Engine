@@ -41,12 +41,13 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-
-    saveBook: async (parent, { input }, context) => {
+    //fixed books returning on the Saved books page by page passing in args, removing input and adding to se the savedbooks args.book instead of input
+    saveBook: async (parent, args, context) => {
       if (context.user) {
+        console.log(args);
         const updatedUser = await User.findByIdAndUpdate(
           { _id: context.user._id },
-          { $addToSet: { savedBooks: input } },
+          { $addToSet: { savedBooks: args.book } },
           { new: true }
         );
         return updatedUser;
